@@ -1,0 +1,675 @@
+@font-face {
+    font-family: 'beautiful_every_timeregular';
+    src: url('beautifuleverytime-webfont.eot');
+    src: url('beautifuleverytime-webfont.eot?#iefix') format('embedded-opentype'),
+         url('beautifuleverytime-webfont.woff') format('woff'),
+         url('beautifuleverytime-webfont.ttf') format('truetype'),
+         url('beautifuleverytime-webfont.svg#beautiful_every_timeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{margin: 0; padding: 0; background-color: #000; color: #333; font-family: Verdana, Tahoma, Arial; font-size: 9pt;}
+ul,ol{margin: 0; padding: 0;}
+h1,h2,h3,h4{margin: 0;}
+
+h1{font-size: 10pt; text-align: center; padding: 5px 0; color: #744887;}
+h1.header_title{
+	font-size: 9pt; 
+	text-align: left; 
+	padding-left: 10px; 
+	padding-bottom: 10px;
+	background-color: #452654; 
+	color: #fff;
+	font-weight: normal;
+}
+
+
+div#wrapper{
+	width: 600px;
+	height: 700px;
+	padding: 10px;
+	position: relative;
+}
+
+.btn{
+	color: #fff;
+	background-color: #452654;
+	border: 1px solid #744887;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 3px 5px;
+}
+.btn:hover{
+	background-color: #744887;
+}
+
+
+div.tim_container{
+	width: 300px;
+	height: 100%;
+	float: left;
+	background-color: #F9F7F7;
+	border: 1px solid #ccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	z-index: 10;
+}
+
+div.tim_head{
+	height: 50px;
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	
+}
+
+div.tim_head p{
+	padding: 0px 10px;
+	margin: 0;
+}
+
+div.tim_head p span{
+	float:right;
+}
+
+div.tim_users{
+	padding-bottom: 20px; 
+	border-bottom: 1px solid #ccc;
+}
+
+div.tim_users p.status{
+	margin: 20px 0;
+	text-align: center;
+}
+
+div.tim_users ul.users{
+	margin-top: 20px;
+	list-style: none;
+	border-top: 1px solid #eee;
+}
+
+div.tim_users ul li{
+	padding: 10px 0px 10px 30px;
+	border-bottom: 1px solid #eee;
+	font-style: italic;
+	font-size: 8pt;
+	cursor: pointer;
+}
+
+div.tim_users ul li.li_online{
+	background-color: #fff;
+}
+
+div.tim_users ul li.active_chat{
+	background-color: #E9CDF7;
+}
+
+ul li abbr, div.box_header h1 abbr{
+	color: #fff;
+	font-size: 6pt;
+	font-weight: bold;
+	background-color: #744887;
+	padding: 2px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 5px;
+}
+
+div.tim_users ul li span{float: right; margin-right: 10px; font-size: 8pt;}
+
+div.tim_users ul li span.online{color: GREEN;}
+
+div.tim_users ul li b{
+	text-decoration: none;
+	font-style: normal;
+	color: #333;
+	font-weight: bold;
+}
+
+div.tim_users ul li a:hover{
+	color: #999;
+}
+
+div.tim_global{
+	/*padding: 0 10px; */
+}
+
+div.tim_global ul.global_chat{
+	list-style: none;
+	border-top: 1px solid #aaa;
+}
+
+div.tim_global ul.global_chat li{
+	background-color: #fff;
+	padding: 15px;
+	border-bottom: 1px solid #aaa;
+	cursor: pointer;
+}
+
+div.tim_global ul.global_chat li.read{
+	background-color: #eee;
+}
+
+div.tim_global ul.global_chat li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+div.tim_global ul.global_chat li a:hover{
+	text-decoration: underline;
+}
+
+div.tim_global ul.global_chat li span{
+	float: right;
+	font-size: 7pt;
+}
+div.tim_global ul.global_chat li em{
+	font-size: 6.5pt;
+}
+
+
+
+
+/** Message Box ***/
+div.message_box{
+	width: 300px;
+	height: 580px;
+	background-color: #eee;
+	position: absolute;
+	z-index: 9;
+	left: 310px;
+	top: 118px;
+	-moz-border-top-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+
+div.message_box div.box_header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 2px solid #ccc;
+}
+
+div.message_box div.box_messages{
+	width: 100%;
+	height: 450px;
+	border-bottom: 2px solid #ccc;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+
+}
+
+div.message_box div.box_send{
+	width: 100%;
+	height: 66px;
+}
+
+div.message_box div.box_header h1{
+	text-align: left;
+	padding-left: 10px;
+	font-weight: normal;
+	margin: 0;
+}
+
+div.message_box div.box_header p{
+	margin: 0 10px;
+	font-size: 8pt;
+	font-style: italic;
+}
+
+div.message_box div.box_messages ul.messages{
+	padding: 10px;
+	list-style: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 450px;
+	overflow: auto;
+	width: 94%;
+}
+
+div.message_box div.box_messages ul.messages li{
+	padding: 10px 0;
+}
+div.message_box div.box_messages ul.messages li em{
+	font-size: 7.5pt;
+}
+div.message_box div.box_messages ul.messages li span{
+	font-size: 7.5pt;
+}
+
+div.message_box div.box_send{
+	padding: 10px;
+}
+
+div.message_box div.box_send textarea{
+	border: 1px solid #ccc;
+	width: 220px;
+	height: 45px;
+}
+
+div.message_box div.box_send input.btn{
+	font-size: 10pt;
+	padding: 6px 4px;
+	position: relative;
+	bottom: 18px;
+	left: 5px;
+}
+
+
+/*** end of Message Box ***/
+
+
+/**** status Box ****/
+div.status_box{
+	width: 280px;
+	height: 180px;
+	background-color: #eee;
+	position: absolute;
+	z-index: 9;
+	left: 310px;
+	top: 18px;
+	-moz-border-top-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+div.status_box textarea{
+	width: 280px;
+	height: 60px;
+	margin-bottom: 10px;
+	-moz-border-top-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border: 1px solid #ccc;
+}
+
+/*** end of status Box ***/
+
+
+
+/*** GROUP CHAT ***/
+
+div.tim_global span.global_start{
+	float: right; 
+	margin-right: 5px; 
+	font-size: 7.5pt;
+	cursor: pointer;
+	background-color: #744887;
+	padding: 2px 4px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	position: relative;
+	top: 2px;
+}
+
+
+div.tim_global span.global_start:hover{
+	background-color: #885E9B;
+}
+
+
+/**** Global Box ****/
+div.global_box{
+	width: 280px;
+	height: 300px;
+	background-color: #eee;
+	position: absolute;
+	z-index: 7;
+	left: 610px;
+	top: 102px;
+	-moz-border-top-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+div.global_box textarea{
+	width: 280px;
+	height: 60px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+div.global_box input.textbox{
+	width: 275px;
+	border: 1px solid #ccc;
+	padding: 2px;
+}
+
+div.gc_con{
+	width: 100%;
+	height: 470px;
+	background-color: #ddd;
+	overflow-y: auto;
+}
+
+div.gc_con div.gc_box{
+	width: 90%;
+	margin-top: 10px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+
+div.gc_con div.gc_box.own{
+	background-color: #F6EAFC;
+}
+
+div.gc_con div.gc_box h2{
+	font-size: 8pt;
+	margin: 0;
+}
+
+div.gc_con div.gc_box h2 span{
+	float: right;
+	font-weight: normal;
+	font-size: 7pt;
+}
+
+div.gc_con div.gc_box p{
+	font-size: 8pt;
+}
+
+div.gc_send{
+	padding: 10px 0;
+}
+
+div.gc_send textarea{
+	width: 370px;
+	height: 50px;
+	margin-bottom: 10px;
+	-moz-border-top-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+div.gc_send input.btn{
+	position: relative;
+	top: -30px;
+	font-size: 15pt;
+	height: 60px;
+}
+
+span.gc_box_close{
+	cursor: pointer;
+}
+
+
+
+/*** end of Global Box ***/
+
+
+
+/*** end of GROUP CHAT ***/
+
+
+
+
+/*** Jay Modal ***/
+div.jmodal_overlay{
+	width: 120%;
+	height: 150%;
+	background-color: #000;
+	opacity: 0.8;
+	position: absolute;
+	left: 0;
+	top: -140px;
+	z-index: 600;
+	display: none;
+}
+
+div.jmodal_overlay_text{
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -140px;
+	z-index: 601;
+	display: none;
+}
+
+div.jmodal_overlay_text div.text_inside{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 602;
+}	
+
+div.global_chat_inside{
+	width: 460px;
+	height: 600px;
+	background-color: #eee;
+	position: absolute;
+	z-index: 9;
+	left: 100px;
+	top: 150px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+
+
+/*** end of Jay Modal ***/
+
+
+
+/*** Task Managaer ***/
+div#task_wrapper{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 500px;
+	height: 600px;
+	background-color: #fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#task_wrapper div.task_header{
+	padding: 5px;
+	border-bottom: 2px solid #ccc;
+}
+
+#task_wrapper div.task_header h1{
+	text-align: left;
+}
+
+#task_wrapper div.task_header h1 span#total_task{
+	float:right;
+	color: #000;
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+
+#task_wrapper div.mini-header{
+	padding: 0 5px;
+}
+
+#task_wrapper div.mini-header span{
+	float: right;
+}
+
+#task_wrapper div.mini-header span a{
+	text-decoration: none;
+	color: #744887;
+}
+
+#task_wrapper div.mini-header span a:hover{
+	text-decoration: underline;
+}
+
+#task_wrapper div.task_body{
+	padding: 10px 5px;
+	height: 430px;
+	overflow: auto;
+	border-bottom: 2px solid #ccc;
+}
+
+#task_wrapper div.task_body ul{
+	list-style: none;
+	border-top: 1px solid #ccc;
+}
+
+#task_wrapper div.task_body ul li{
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	/*
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	*/
+	padding: 5px 0;
+	font-size: 14pt;
+	font-family: "beautiful_every_timeregular";
+	cursor: pointer;
+	position: relative;
+	padding-left: 65px;
+}
+
+#task_wrapper div.task_body ul li:hover{
+	background-color: #ddd;
+}
+
+#task_wrapper div.task_body ul li div.icon-container{
+	width: 80px; 
+	height: 30px; 
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+
+#task_wrapper div.task_body ul li div.icon-container img.done,#task_wrapper div.task_body ul li div.icon-container img.delete,#task_wrapper div.task_body ul li div.icon-container img.undone{
+	width: 25px;
+}
+
+#task_wrapper div.task_body ul li div.icon-container img.done:hover,#task_wrapper div.task_body ul li div.icon-container img.delete:hover,#task_wrapper div.task_body ul li div.icon-container img.undone:hover{
+	opacity: 0.7;
+}
+
+#task_wrapper div.task_body ul li div.icon-container img.undone{
+	display: none;
+}
+#task_wrapper div.task_body ul li div.icon-container img.delete{
+	margin-left: -5px; 
+}
+
+#task_wrapper div.task_body ul li.task_done{
+	text-decoration: line-through;
+}
+
+#task_wrapper div.task_body ul li.task_done div.icon-container img.done{
+	display: none;
+}
+
+#task_wrapper div.task_body ul li.removed{
+	display: none;
+}
+
+#task_wrapper div.task_body ul li.task_done div.icon-container img.undone{
+	display: inline;
+}	
+#task_wrapper div.task_body ul li.task_done{
+	color: RED;
+	background-color: #eee;
+}
+
+
+#task_wrapper div.task_textbox{
+	
+	margin-top: 10px;
+	height: 80px;
+}
+
+#task_wrapper div.task_textbox div.textbox_con{
+	height: 90%;
+	width: 80%;
+	float: left;
+}
+
+#task_wrapper div.task_textbox div.textbox_con textarea{
+	width: 98%;
+	height: 85%;
+	margin-left: 2%;
+	border: 1px solid #000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding: 5px;
+	font-family: "beautiful_every_timeregular";
+	font-size: 10pt;
+}
+
+#task_wrapper div.task_textbox div.textbox_submit{
+	height: 90%;
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+#task_wrapper div.task_textbox div.textbox_submit img{
+	margin-top: 10px;
+}
+
+#task_wrapper div.task_textbox div.textbox_submit img:hover{
+	cursor:pointer;
+	opacity: 0.8;
+}
+
+/*** End of Task Manager ***/

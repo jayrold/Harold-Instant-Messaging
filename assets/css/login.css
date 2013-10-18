@@ -1,0 +1,83 @@
+body{
+	background-color: #fff;
+}
+
+div#login_wrapper{
+	margin: 250px auto 0 auto;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/* border: 1px solid #744887; */
+	border: 1px solid #ccc; 
+	padding: 10px;
+}
+
+
+div#login_wrapper span{
+	display: block;
+	padding : 5px 10px;
+}
+
+div#login_wrapper span.tree-container{
+	text-align: center;
+}
+
+div#login_wrapper span.tree-container img{
+	height: 120px;
+}
+
+div#login_wrapper span label{
+	float: left;
+	width: 100px;
+	display: block;
+	position: relative;
+	top: 5px;
+}
+
+div#login_wrapper span input.textbox{
+	border: 1px solid #ccc;
+	width: 260px;
+	padding: 5px;
+	font-size: 9pt;
+}
+
+div#login_wrapper span input.button,div#login_wrapper span a.button{
+	background-color: #744887;
+	border: 1px solid #9561AD;
+	color: #fff;
+	padding: 5px 8px;
+	cursor: pointer;
+	font-size: 11pt;
+	text-decoration: none;
+}
+
+
+div#login_wrapper span input.button:hover{
+	background-color: #9561AD;
+}
+
+div#login_wrapper span input.checkbox{
+	margin-left: 0;
+}
+
+div#login_wrapper span.error{
+	text-align: center;
+	color: RED;
+	font-size: 8pt;
+	background-color: #EFDA62;
+	margin: 10px auto;
+	width: 200px;
+	padding: 10px;
+	border: 1px solid #EF404C;
+	display: none;
+}
+
+div#login_wrapper span.error p{
+	line-height: 9pt;
+	margin: 0;
+}
+
+
+
